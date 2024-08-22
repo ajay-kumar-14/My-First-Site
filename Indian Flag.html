@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Flag</title>
+    <link rel="stylesheet" href="styles.css">
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0; /* Light grey background for contrast */
+    }
+    
+    .flag {
+        width: 300px;
+        height: 180px;
+        border: 1px solid #000; /* Border to visualize the flag boundary */
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .stripe {
+        flex: 1;
+    }
+    
+    .saffron {
+        background-color: #FF9933; /* Saffron color */
+    }
+    
+    .white {
+        background-color: #FFFFFF; /* White color */
+        position: relative;
+    }
+    
+    .green {
+        background-color: #138808; /* Green color */
+    }
+    
+    .chakra {
+        width: 40px;
+        height: 40px;
+        border: 5px solid #000080; /* Navy blue color for the Ashoka Chakra */
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .chakra::before {
+        content: '';
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: #000080; /* Navy blue center of the Ashoka Chakra */
+    }
+    </style>
+
+</head>
+<body>
+    <div class="flag">
+        <div class="stripe saffron"></div>
+        <div class="stripe white">
+            <div class="chakra"></div>
+        </div>
+        <div class="stripe green"></div>
+    </div>
+</body>
+</html>
